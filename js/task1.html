@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSTask_1</title>
+</head>
+<body>
+    <label for="Number">
+        <input type="number" id="number" required>
+    </label>
+    <label for="Button" id="Reversebutton" onclick="ReverseNum()">
+        <button id="RevButton">
+            Reverse it!
+        </button>
+    </label>
+    <p id="finalResult">
+        Your  Reversed Number is:
+    </p>
+    <script>
+
+        function ReverseNum(){
+            
+            let Number=document.getElementById("number").value;
+            
+            let NumberArray=[];
+            
+            document.getElementById("finalResult").textContent="Your Reversed Number is:"+Number;
+        
+        }
+    </script>
+</body>
+</html>
